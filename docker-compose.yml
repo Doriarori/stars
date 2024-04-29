@@ -1,0 +1,17 @@
+version: '3.9'
+
+services:
+
+  nasa_service:
+    restart: on-failure
+    container_name: nasa_service
+    build: nasa_service/
+    ports:
+      - "8001:80"
+
+  planet_service:
+    restart: on-failure
+    container_name: planet_service
+    build: planet_service/
+    ports:
+      - "8000:80"
