@@ -9,9 +9,9 @@ services:
     ports:
       - "8001:80"
 
-  planet_service:
+  star_service:
     restart: on-failure
-    container_name: planet_service
-    build: planet_service/
+    container_name: star_service
+    build: star_service/
     ports:
       - "8000:80"

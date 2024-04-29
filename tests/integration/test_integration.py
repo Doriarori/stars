@@ -7,10 +7,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 sys.path.append(str(BASE_DIR))
 sys.path.append(str(BASE_DIR / 'nasa_service/app'))
-sys.path.append(str(BASE_DIR / 'planet_service/app'))
+sys.path.append(str(BASE_DIR / 'star_service/app'))
 
 from nasa_service.app.main import service_alive as nasa_service_status
-from planet_service.app.main import service_alive as planet_service_status
+from star_service.app.main import service_alive as planet_service_status
 
 @pytest.mark.asyncio
 async def test_database_connection():
