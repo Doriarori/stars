@@ -33,4 +33,4 @@ async def near_earth_objects(start_date: str, end_date: str):
 
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=80)
+    uvicorn.run(app, host="0.0.0.0", port=int(os.getenv('PORT', 80)))
